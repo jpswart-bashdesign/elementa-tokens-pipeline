@@ -1,0 +1,23 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "sync",
+      "description": "Full pipeline: pull tokens from Figma then build CSS + Dart output",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "sync"]
+    },
+    {
+      "name": "extract",
+      "description": "Pull variables from Figma Variables API and write tokens/*.json files",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "extract"]
+    },
+    {
+      "name": "build",
+      "description": "Transform tokens/*.json into dist/web/variables.css and dist/flutter/em_tokens.dart",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "build"]
+    }
+  ]
+}

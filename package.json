@@ -1,0 +1,14 @@
+{
+  "name": "elementa-token-pipeline",
+  "version": "1.0.0",
+  "description": "Design token pipeline: Figma → CSS + Dart",
+  "scripts": {
+    "extract": "node scripts/extract.js",
+    "build": "style-dictionary build --config style-dictionary.config.js",
+    "sync": "npm run extract && npm run build"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "style-dictionary": "^4.3.0"
+  }
+}
